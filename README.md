@@ -59,7 +59,7 @@ We use 228 movie to generate 10031 movie clips. 7046 clips for train, and 1496 f
 5. NO overlap
    
 ## statistic
-| length<br> shot/scene  | all | train | val | test_in_domain | test_out_domain | 
+| shot/scene length  | all | train | val | test_in_domain | test_out_domain | 
 | --- | ---- | --- | --- | --- | --- | ---- | --- | --- |
 |  1 |    0/6833| 0/4785 | 0/381 | 0/824  | 0/843 |
 |  2 |    0/1975| 0/1418 | 0/136 | 0/216  | 0/205 |
