@@ -1,7 +1,10 @@
 # VideoReorder Dataset
 ## Introduce
 This dataset is based on Hierachal-MovieNet for video reorder task.
-We use 228 movie to generate 10031 movie clips. 7046 clips for train, and 1496 for val and  1491 for test.
+We use 228 movie to generate 10031 movie clips. 7048 clips for train, 589 for val, 1178 for in_domain test and 1196 for out_domain test.
+
+## Download
+You can download the full dataset(9.5G) here: https://bigai-research.s3.us-west-1.amazonaws.com/VideoReorder-MovieNet.zip
 
 ## Structure
 ```
@@ -42,7 +45,7 @@ We use 228 movie to generate 10031 movie clips. 7046 clips for train, and 1496 f
     "scene_id" : [2 , ...]
 }
 ```
-### subtitle_id
+### subtitle.json
 ```
 [
     ["Men, are you over 40?"],
@@ -55,8 +58,9 @@ We use 228 movie to generate 10031 movie clips. 7046 clips for train, and 1496 f
 1. The frames have subtitle in a clip is more than 80\%.
 2. The length of a clips is 10 to 20.
 3. Only the subtitle that locate on the frame will be record.
-4. Test group from different movie with train and val, which share the same movie source.
+4. Out_domain test groups come from different movies with in_domain groups(train,val,test_in_domain), while in_domain groups sampled from same movies  source.
 5. NO overlap
+
    
 ## statistic
 | shot/scene length  | all | train | val | test_in_domain | test_out_domain | 
